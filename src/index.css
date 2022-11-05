@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@layer base {
+  body {
+    @apply font-roboto m-0 text-center
+  }
+
+  .Todo_Header {
+    @apply font-roboto text-white shadow-black shadow-md text-3xl bg-gradient-to-r bg-blue-700 h-12 border-solid border-black text-center shadow-inner p-2
+  }
+
+  .Add_Todo {
+    @apply font-roboto m-2 m-16 m-2 m-16 p-3 p-0 p-3 p-0;
+  }
+
+
+  .Add_Todo>.Text_Field {
+    @apply w-96
+  }
+
+  .Add_Todo>Button {
+    @apply w-1/5 m-3;
+  }
+
+  /*paper*/
+  .Todos_Rendering{
+    @apply flex items-center justify-between m-2 m-16 m-2 m-16 p-2
+  }
+  .Todos_Rendering>p{
+    @apply font-roboto font-bold capitalize;
+  }
+  /*
+  .Todos_Rendering>div>Button{
+    @apply w-24 m-1 items-end;
+  } */
+}
+
